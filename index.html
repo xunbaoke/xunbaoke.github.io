@@ -1,0 +1,68 @@
+<html lang="zh-CN">
+
+<head>
+
+</head>
+
+<body>
+	<div class="layout-wrap">
+		<header class="layout-header">
+			<div class="container" data-flex="main:justify cross:start">
+				
+			</div>
+		</header>
+		<div class="layout-content">
+			<div class="container">
+				<article class="article" id="article">
+					<div class="article-box">
+						
+						<div class="precast-block" data-flex="main:left">
+							<div class="input-group">
+								<span style="text-align: center;color:#9ca2a8">&nbsp;&nbsp;ChatGPT版本：</span>
+								<select id="id" class="btn-default form-control" style="background-color: rgb(164,165,179);min-width:100px;max-width:120px">
+									<option value="1">对话版</option>
+									<option value="2">绘图版</option>
+								</select>
+							
+								<span style="text-align: center;color:#9ca2a8">&nbsp;&nbsp;连续对话：</span>
+								<input type="checkbox" id="keep"  checked style="min-width:220px;">
+								<label for="keep"></label>
+								<span style="text-align: center;color:#9ca2a8">&nbsp;&nbsp;APIKEY：</span>
+								<input type="text" class="form-control" placeholder="sk-xxxxxxxxxx" maxlength="100" id="key" value="" style="background-color: rgb(164,165,179);min-width:200px;max-width:280px">
+
+								<div class="right-btn layout-bar">
+									<p class="balance  bright-btn" id="balance"  data-flex="main:center cross:center">查询余额</p>
+								</div>
+
+							</div>
+						</div>
+						<ul id="article-wrapper" style="overflow-y:auto; overflow-x:auto; width:auto; height:200px;">
+
+						</ul>
+						<div class="creating-loading" data-flex="main:center dir:top cross:center">
+							<div class="semi-circle-spin"></div>
+						</div>
+						<div id="fixed-block">
+							<div class="precast-block" id="kw-target-box" data-flex="main:left cross:center">
+								<div id="target-box" class="box">
+									<input type="text" name="kw-target" placeholder="它几乎无所不能，点此提问" id="kw-target" autofocus>
+								</div>
+								<div class="right-btn layout-bar">
+									<p class="btn ai-btn bright-btn" id="ai-btn"  data-flex="main:center cross:center"><i class="iconfont icon-wuguan"></i>发送</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+    <script src="https://s3.pstatp.com/cdn/expire-1-w/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/layer/3.5.1/layer.min.js" type="application/javascript"></script>
+	<script src="/js/chat.js?v2.8"></script>
+	<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+	<script>LA.init({id:"JyISOrHps8YUked6",ck:"JyISOrHps8YUked6"})</script>
+</body>
+
+</html>
